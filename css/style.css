@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+:root {
+    --brand: #8c34eb;
+    --primary: #808080;
+    --secondary: #DCDCDC;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.form-section {
+    display: flex;
+}
+
+.left-section {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-wrapper h1 {
+    margin: 0;
+}
+
+.form-wrapper p {
+    color: var(--primary);
+}
+
+.form-control {
+    width: 100%;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.input-wrapper label {
+    padding-bottom: 3px;
+}
+
+.input-wrapper input {
+    padding: 10px;
+    border-radius: 4px;
+    outline: 0;
+    border: 1px solid var(--secondary);
+    width: 92%;
+    color: var(--primary);
+}
+
+.forgot-password {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgot-password small {
+    color: var(--brand);
+    font-weight: 700;
+}
+
+.checkbox-wrapper {
+    display: flex;
+}
+
+.checkbox-wrapper label {
+    font-size: 14px;
+}
+
+.button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background: var(--brand);
+    color: white;
+    margin-top: 20px;
+}
+
+.google-section {
+    display: flex;
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.google-image {
+    padding-top: 7px;
+}
+
+.google-section p {
+    margin: 0;
+}
+
+.signup {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.signup p {
+    margin: 0;
+}
+
+.signup :nth-child(1) {
+    color: var(--primary);
+}
+
+.signup :nth-child(2) {
+    color: var(--brand);
+    font-weight: 700;
+}
+
+.right-section {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width:0px) and (max-width:575px) {
+
+    .right-section {
+        display: none;
+    }
+
+    .left-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex: 0 0 100%;
+    }
+
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    .right-section {
+        display: none;
+    }
+
+    .left-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex: 0 0 100%;
+    }
+}
